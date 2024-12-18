@@ -14,7 +14,7 @@ const App = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/products');
+      const response = await axios.get('https://product-management-project.onrender.com/products');
       setProducts(Array.isArray(response.data) ? response.data : []);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -52,7 +52,7 @@ const App = () => {
     }
 
     try {
-      await axios.post('http://localhost:5000/products', newProduct);
+      await axios.post('https://product-management-project.onrender.com/products', newProduct);
       fetchProducts();
       setNewProduct({ id: '', name: '', price: '', category: '' });
     } catch (error) {
@@ -66,7 +66,7 @@ const App = () => {
 
   const deleteProduct = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/products/${id}`);
+      await axios.delete(`https://product-management-project.onrender.com/products/${id}`);
       fetchProducts();
     } catch (error) {
       console.error('Error deleting product:', error);
