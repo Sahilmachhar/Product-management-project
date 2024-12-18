@@ -1,0 +1,81 @@
+.container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.add-product input {
+  margin: 5px;
+  padding: 8px;
+}
+
+.add-product button {
+  padding: 8px 15px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-product button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-header,
+.product-row {
+  display: table-row;
+}
+
+.product-header div,
+.product-row div {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.product-header {
+  font-weight: bold;
+}
+
+button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+.no-products-message {
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: bold;
+  color: red; /* Neutral gray tone */
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background to make it stand out */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
